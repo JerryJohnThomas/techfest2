@@ -1,0 +1,211 @@
+
+.navbar-dark{
+   margin:0;
+   position:fixed;
+   width:200px;
+   height:100%;
+   overflow:auto;
+   
+}
+.navbar-nav .nav-link{
+   padding: 20px 50px ; 
+   display:block;
+
+}
+.navbar-nav span {
+   overflow: hidden; 
+   position: absolute;
+   width:0;
+   padding: 0;
+}
+.navbar-nav i:hover{
+   color:cyan;
+}
+.navbar-nav a:hover span{ 
+   padding:0px 10px; 
+   overflow:visible;
+}
+.prof-img{
+   border-radius: 50%;
+   height:100%;
+   width:150px;
+   padding-bottom: 20px;
+}
+
+.social-media i{
+   color:white;
+   padding:60px 20px;
+}
+#home{
+   background-color: yellow;
+}
+#basic-details{
+   margin: auto;
+   padding-left:25%;
+   background-image: linear-gradient(to bottom right, rgb(183, 0, 255), rgb(55, 0, 255));
+   height:750px;
+}
+
+#details{
+   color:rgb(128, 30, 30);
+   padding-top:10px;
+}
+
+.heading{
+   color:#173b6c;
+   font-family: 'Raleway', sans-serif;
+   font-size:2rem;
+   font-weight: bold;
+   text-decoration: underline;
+   text-align:center;
+   margin-bottom: 40px;
+   padding-top:40px;
+}
+.list li{
+   margin-top:10px;
+   font-size: large;
+}
+.sub-details{
+   margin-left:250px;
+   margin-right:100px;
+}
+.sub-details img{
+   max-width:100%;
+   height:auto;
+}
+#firstline {
+   border: 0;
+   height: 1px;
+   background: rgb(123, 123, 233);
+   background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+#secondline{
+      height: 12px;
+      border: 0;
+      box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+   }
+
+.card{
+   margin-top: 20px;
+}
+.Achievement{
+   margin-top:40px;
+   width:20rem;
+   border-radius: 15px;
+   background-color: #5048af;
+}
+.Achievement h5{
+   padding:5px;
+   color:white;
+}
+.Achievement p{
+   padding:5px;
+   background-color: white;
+   border-style: solid;
+}
+.contact-images img{
+   width:50px;
+   padding-top:50px;
+}
+#mail{
+   font-size: 2rem;
+   margin-top:50px;
+}
+
+#about .heading{
+   padding-top : 10px;
+}
+
+#basic-details h1 {
+   padding-top : 100px;
+   font-size: 72px;
+   color: #ffffff;
+   transform: translateY(-600px);
+   animation: 1.2s slideIn ease-in-out forwards 1s;
+   z-index: 10;
+   opacity: 0;
+   position: relative;
+ }
+ 
+ #basic-details h1::before {
+     content: '';
+     width: 0%;
+     height: 76px;
+     background-color:  #000000;
+     position: absolute;
+     bottom: -10px;
+     animation: 1s underline ease-in-out forwards 2s;
+     mix-blend-mode: screen;
+ }
+ 
+ 
+ @keyframes skewBg {
+   0% {
+     transform: scale(.5);
+   }
+   100% {
+     transform: scale(1);
+   }
+ }
+ 
+ /* @keyframes underline {
+   100%{
+     width:75%;
+   } */
+
+ @keyframes slideIn {
+   100% {
+     transform: translateY(0px);
+     opacity: 1;
+   }
+ }
+
+@media screen and (max-width: 992px) {
+ .name{
+    font-size:3em;
+ } 
+ 
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+   .navbar-dark {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .navbar-nav{
+       padding-left:25%;
+   }
+   .navbar-dark a {
+     text-align: center;
+     float: none;
+   }
+   .navbar-dark i {
+      font-size:larger;
+   }
+   .name{
+      font-size:2em;
+   }
+   
+   .sub-details{
+      margin-left:20px;
+      margin-right:20px;
+   
+   }
+   #basic-details{
+      margin: auto;
+      padding-left:10%;
+      background-image: linear-gradient(to bottom right, rgb(183, 0, 255), rgb(55, 0, 255));
+      height:750px;
+   }
+  
+}
+
+
+
+
+
+
